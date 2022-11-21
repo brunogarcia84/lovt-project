@@ -12,6 +12,7 @@
     "room_details room_details room_details room_details"
     "your_style your_style your_style your_style"
     "footer footer footer footer";
+  margin: 25px auto;
 }
 
 header {
@@ -27,17 +28,30 @@ header > figure {
   padding: var(--size_xs);
 }
 
-header > figure > img:nth-child(2) {
+.hero {
+  grid-area: hero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero {
-  border: 1px solid green;
-  grid-area: hero;
+.hero > figure > img {
+  width: 790.4px;
+  height: 336.7px;
+  margin: var(--size_xl);
 }
 
 .room_details {
   border: 1px solid blue;
   grid-area: room_details;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.room_details__rooms > figure > img {
+  width: 410px;
+  height: 230px;
 }
 
 .your_style {
@@ -54,4 +68,14 @@ footer {
   .container {
     width: var(--mobile_container_width);
   }
-} ;
+
+  .hero > figure > img {
+    width: 364.8px;
+    height: 155.4px;
+    margin: var(--size_md);
+  }
+
+  .room_details {
+    display: block;
+  }
+}
