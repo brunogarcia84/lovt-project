@@ -1,0 +1,57 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+
+.container {
+  width: var(--container_width);
+  height: var(--container_height);
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "room_details room_details room_details room_details"
+    "your_style your_style your_style your_style"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  box-shadow: 5px 5px 5px lightgray;
+  margin-bottom: var(--size_lg);
+}
+
+header > figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size_xs);
+}
+
+header > figure > img:nth-child(2) {
+}
+
+.hero {
+  border: 1px solid green;
+  grid-area: hero;
+}
+
+.room_details {
+  border: 1px solid blue;
+  grid-area: room_details;
+}
+
+.your_style {
+  border: 1px solid orange;
+  grid-area: your_style;
+}
+
+footer {
+  border: 1px solid cyan;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: var(--mobile_container_width);
+  }
+} ;

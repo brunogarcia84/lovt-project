@@ -1,0 +1,42 @@
+:root {
+  --bg_primary__main: #444;
+  --bg_primary__alt: #999;
+  --fg_primary__main: #fff;
+  --fg_primary__alt: blueviolet;
+  --bg_secondary__main: #444;
+  --bg_secondary__alt: #999;
+  --fg_secondary__main: #fff;
+  --fg_secondary__alt: blueviolet;
+
+  --size_xs: 0.6rem;
+  --size_sm: 0.8rem;
+  --size_md: 1rem;
+  --size_lg: 2rem;
+  --size_xl: 3rem;
+  --size_xxl: 4rem;
+
+  --container_width: 800px;
+  --container_height: auto;
+  --mobile_container_width: 350px;
+  --mobile_container_height: auto;
+
+  --weight_light: 100;
+  --weight_normal: 500;
+  --weight_bold: 900;
+
+  --margin_sm: 0.4rem;
+  --margin_md: 0.8rem;
+  --margin_lg: 1rem;
+  --margin_xl: 2rem;
+  --margin_xxl: 4rem;
+
+  --padding_sm: 0.4rem;
+  --padding_md: 0.8rem;
+  --padding_lg: 1rem;
+  --padding_xl: 2rem;
+  --padding_xxl: 4rem;
+
+  --breakpoint_mobile: 768px;
+  --breakpoint_tablet: 1023px;
+  --breakpoint_desktop: 1024px;
+}
