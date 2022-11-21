@@ -94,13 +94,80 @@ header > figure {
 }
 
 .your_style {
-  border: 1px solid orange;
   grid-area: your_style;
+  width: 100%;
+}
+
+.your_style > header {
+  box-shadow: none;
+}
+
+.your_style > header > h1 {
+  font-size: var(--size_xl);
+  color: var(--bg_secondary__alt);
+  text-align: center;
+}
+
+.your_style > article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--size_lg);
+}
+
+.your_style > article > span {
+  font-size: var(--size_xl);
+  color: white;
+}
+
+.your_style__description_industrial {
+  background-image: url(../img/industrial_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+}
+
+.your_style__description_modern {
+  background-image: url(../img/modern_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+}
+
+.your_style__description_classic {
+  background-image: url(../img/classic_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
 }
 
 footer {
-  border: 1px solid cyan;
   grid-area: footer;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--size_xxl);
+}
+
+footer > figure > img {
+  width: 30rem;
+}
+
+footer > .address {
+  font-size: var(--size_lg);
+}
+
+.address > article,
+address {
+  padding: var(--size_md);
+}
+
+.address > figure > a > img {
+  width: 3rem;
+  padding: var(--size_sm);
+  margin: 0 var(--size_md);
 }
 
 @media screen and (max-width: 768px) {
@@ -121,5 +188,34 @@ footer {
 
   .room_details__rooms > img {
     width: 22rem;
+  }
+
+  .your_style {
+    width: 84.5%;
+    margin-top: var(--size_md);
+  }
+
+  footer {
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer > figure {
+    margin: 50px auto;
+  }
+
+  footer > figure > img {
+    width: 18rem;
+    padding: var(--size_lg);
+  }
+
+  footer > article > h4,
+  span {
+    font-size: var(--size_md);
+  }
+
+  .footer_social_media {
+    font-size: var(--size_md);
+    text-align: center;
   }
 }
