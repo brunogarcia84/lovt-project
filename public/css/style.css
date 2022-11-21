@@ -2,6 +2,10 @@
 @import url(./variables.css);
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: var(--container_width);
   height: var(--container_height);
@@ -42,16 +46,51 @@ header > figure {
 }
 
 .room_details {
-  border: 1px solid blue;
   grid-area: room_details;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 5rem auto;
 }
 
-.room_details__rooms > figure > img {
-  width: 410px;
-  height: 230px;
+.room_details__rooms {
+  margin-right: var(--size_xxl);
+}
+
+.room_details__rooms > img {
+  width: 30rem;
+}
+
+.room_details__block_all {
+  background-color: #eee;
+  padding: var(--size_md);
+}
+
+.room_details__header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: var(--size_md);
+  font-size: var(--size_lg);
+  color: var(--bg_secondary__alt);
+}
+
+.room_details__header_block > a {
+  text-decoration: none;
+  color: white;
+  padding: var(--size_sm) var(--size_lg);
+  border-radius: 10.5px;
+}
+
+.room_details__link1 {
+  background-color: #51d275;
+}
+
+.room_details__link2 {
+  background-color: #dc9730;
 }
 
 .your_style {
@@ -76,6 +115,11 @@ footer {
   }
 
   .room_details {
-    display: block;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .room_details__rooms > img {
+    width: 22rem;
   }
 }
